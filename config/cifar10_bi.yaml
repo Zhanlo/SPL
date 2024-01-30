@@ -1,0 +1,15 @@
+# Architecture
+arch: wideresnet_cifar10_6
+pretrained_model: ./pretrain/vat_06_pretrain.pth
+
+# ===== Dataset ===== #
+data_path: ./datasets/Cifar
+data_set: cifar10
+job_dir: ./experiment/wideresnet_VAT_cifar10/vat_06
+
+# ===== Sparsity ===== #
+conv_type: PretrainConv
+freeze_weights: True
+
+# ===== Hardware setup ===== #
+workers: 20
